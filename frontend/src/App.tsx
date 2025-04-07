@@ -7,7 +7,9 @@ import { FileSearch } from 'lucide-react';
 function App() {
   const [message, setMessage] = useState('');
   const handleSumbit = () => {
+    alert(`what you entered was ${message}`)
   };
+  
   
 
 
@@ -22,10 +24,7 @@ function App() {
           <span className="text-md">🐻</span>
         </div>
         <div className="bg-gray-200 rounded-2xl px-5 py-4 max-w-xs mt-2" >
-          Hi how can i help you? 
-        </div>
-        <div className="flex bg-gray-200 rounded-2xl">
-         the message that you entered is: {message}
+          Hi how can i help you? is this what you wanted was 
         </div>
       </div>
 
@@ -33,17 +32,17 @@ function App() {
       <div className="fixed bottom-5  left-[1450px] transform -translate-x-1/1 w-[1000px] p-4 bg-gray-100 rounded-xl shadow-lg" >
         
         {/* Input Field with Send Button */}
-        <div className="relative flex-row flex-nowrap bg-gradient-to-l from-[#FFAE75] via-[#F8F8F8]  to-[#F8F8F8] rounded-full border border-gray-300 p-2">
+        <div className="flex-nowrap bg-gradient-to-l from-[#FFAE75] via-[#F8F8F8]  to-[#F8F8F8] rounded-full border border-gray-300 p-2">
           <form onSubmit={handleSumbit}>
           <input 
             type="text" 
             placeholder="Ask me anything" 
             value={message} 
             onChange={(e)=> setMessage(e.target.value)}
-            className="p-3  bg-transparent border-none outline-none rounded-full "
+            className="p-3  bg-transparent border-none outline-none rounded-full mt-1"
           />
           
-          <button className="bg-[#FF8934] hover:bg-[#FF8934] text-black rounded-full p-4 relative left-170">
+          <button className="bg-[#FF8934] hover:bg-[#FF8934] text-white rounded-full p-4 relative left-170">
           <Send size={20}/>
           </button>
           </form>
