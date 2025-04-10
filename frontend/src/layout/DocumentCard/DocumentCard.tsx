@@ -10,12 +10,12 @@ const DocumentCard: FC<MyComponentProps> = (props) => {
   return (
     <div className='DocumentCard'>
         <div className='DocumentCard-img-container'>
-            <img src={props.document.image} className= "document-image" alt="" />
+            <img src={props.document.file_url} className= "document-image" alt="" />
         </div>
         <div className= 'DocumentCard-content-container'>
-            <h1 className='documentName'>{props.document.name}</h1>
+            <h1 className='documentName'>{props.document.filename}</h1>
 
-            <div className='description-container'><p className='description-content'>{props.document.type_document}</p> </div>
+            <div className='description-container'><p className='description-content'>{props.document.mimeType}</p> </div>
 
         </div>
     </div>
