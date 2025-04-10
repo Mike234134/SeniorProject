@@ -1,10 +1,22 @@
 
+import './App.css';
+import Home from './layout/Home/Home'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 function App() {
-
   return (
-    <h1 className="text-4x1 text-blue-500">New Vite Project</h1>
       
-  );
-}
+      <div className='app' >  
 
+        <div className='router-container'>
+          <Routes>
+            
+            <Route path="/" element={<Home />}/>
+
+
+          </Routes>
+        </div>
+       
+          
+      </div>  );}
 export default App;
