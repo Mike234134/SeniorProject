@@ -39,6 +39,7 @@ Our goal is to empower CS students with accessible and intelligent support, help
 | **Database**     | PostgreSQL (vector store for knowledge base)                  |
 | **File Storage** | AWS S3 (for transcripts, resumes)                              |
 | **Containerization** | Docker (for cross-platform deployment)                    |
+| **Speech-to-Text** | ElevenLabs + FFmpeg                                          |
 
 ---
 
@@ -73,15 +74,17 @@ Our goal is to empower CS students with accessible and intelligent support, help
 ###  ElevenLabs + FFmpeg Audio Pipeline
 - Converts chatbot text responses to audio using **ElevenLabs** TTS API.
 - **FFmpeg** processes and plays audio directly in the browser for seamless audio feedback.
+### Speech to text
+- Able to detect the users voice for text to speech features that enable the user to be able to talk to the model and get direct responses
 ### Usage 
--for the frontend 
--cd frontend 
--npm install to install all the node packages
--npm run dev to run the development server on your local computer
--for the backend 
--cd backend
--pip install -r requirements.txt
--python app.py
+
+- cd frontend 
+- npm install to install all the node packages
+- npm run dev to run the development server on your local computer
+for the backend 
+- cd backend
+- pip install -r requirements.txt
+- python app.py
 ---
 
 ##  Final Notes
