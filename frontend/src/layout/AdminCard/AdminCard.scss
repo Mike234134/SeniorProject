@@ -1,0 +1,39 @@
+.admin-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    min-width: 500px;
+  
+    .icon {
+      color: #e11d48; // Tailwind 'rose-600'
+      font-size: 1.8rem;
+    }
+  
+    .text-content {
+        width: 100%;
+
+        
+      h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+      }
+      .metadata-content {
+        display: flex;
+        flex-direction: row;
+        p {
+
+            margin: 0.2rem 0 0 0;
+            font-size: 0.875rem;
+            color: #6b7280; // Tailwind 'gray-500'
+          }
+
+      }
+  
+      
+    }
+  }
+  
+  
+  

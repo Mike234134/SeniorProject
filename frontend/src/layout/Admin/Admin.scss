@@ -1,0 +1,107 @@
+.admin{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    
+    margin: 20px;
+    border-radius: 28px 28px 0 0;  // Top-left | Top-right | Bottom-right | Bottom-left
+    justify-content: center;
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+
+        h1 {
+            font-size: 24px;
+        }
+        #signout {
+            margin-left: auto;
+            margin-top: 5px;
+            margin-right: 20px;
+            /* top | right | bottom | left */
+            padding: 8px 20px 10px 20px;
+        
+            font-family: "Lato", sans-serif;
+            font-weight: 750;
+            font-style: normal;
+            height: 40px;
+            width: 124px;
+            background-color: #1c232c;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            
+            
+        }
+
+    }
+    
+    .admin-content-container{
+        
+        display: flex;
+        
+        flex-direction: column;
+        padding: 60px 62px 30px 62px; // Top: 10px | Right: 15px | Bottom: 20px | Left: 25px
+        
+        .header{
+            padding-bottom: 20px;
+            font-size:xx-large;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+        
+         
+            .child-content-container{
+                border: 1px solid #e5e7eb; /* light gray border (like Tailwind's 'gray-200') */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* soft subtle shadow */
+                border-radius: 12px; /* rounded corners */
+                padding: 1.5rem; /* some space inside */
+                background-color: white; /* so the shadow shows up on light backgrounds */
+                max-width: 500px;
+                width: 100%;
+         
+                height: fit-content;
+                #upload-file-heading{
+                    margin-bottom: 20px;
+                    font-weight: 470;
+                    font-size: large;
+                }
+    
+                #fileInputLable{
+                    cursor: pointer;
+                    border: 1px solid #000000;
+                    border-radius: 8px;
+                    padding: 6px 12px;
+                    display: inline-block;
+                    background-color: black;
+                    color: white;
+    
+                }
+                
+            }
+
+            .uploaded-content-container {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #e5e7eb; /* light gray border (like Tailwind's 'gray-200') */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* soft subtle shadow */
+                border-radius: 12px; /* rounded corners */
+                padding: 1.5rem; /* some space inside */
+                background-color: white; /* so the shadow shows up on light backgrounds */
+                padding-right: clamp(1rem, 5vw, 300px);
+                
+
+                padding-right: 300px;
+               
+                margin-left: 20px;
+
+            }
+
+        }
+        
+        
+    }
+}
