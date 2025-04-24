@@ -65,7 +65,7 @@ Our goal is to empower CS students with accessible and intelligent support, help
 - Secure login system to protect user data and provide personalized access.
 
 ### Admin dashboard
-- Impletned an admin page where professors can come in and upload files with updated information about the computer science deparment so that the model can have updated answers.
+- Implemented an admin page where professors can come in and upload files with updated information about the computer science deparment so that the model can have updated answers.
 
 ### Document Dashboard
 - Users can view all previously uploaded documents in a dedicated **Documents Page**.
