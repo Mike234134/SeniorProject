@@ -12,6 +12,12 @@ Bearassist is a smart assistant designed for **Morgan State University Computer 
 
 ---
 
+## Preqs
+-Node.js – For running the React frontend
+
+-Docker – Desktop app or VSCode extension for containerization
+
+-Python (with Flask) – Required for running the backend server
 ##  Project Overview
 
 Bearassist helps students by allowing them to:
@@ -67,7 +73,15 @@ Our goal is to empower CS students with accessible and intelligent support, help
 ###  ElevenLabs + FFmpeg Audio Pipeline
 - Converts chatbot text responses to audio using **ElevenLabs** TTS API.
 - **FFmpeg** processes and plays audio directly in the browser for seamless audio feedback.
-
+### Usage 
+-for the frontend 
+-cd rontend 
+-npm install to install all the node packages
+-npm run dev to run the development server on your local computer
+-for the backend 
+-cd backend
+-pip install -r requirements.txt
+-python app.py
 ---
 
 ##  Final Notes
