@@ -1,0 +1,99 @@
+.DocumentCard {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 44px 20px 20px;
+    background-color:#ffffff ;
+    border-radius: 12px 12px 12px 12px; 
+    border: 2px solid #f5f5f5;
+    width: 384px;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px;
+    height: 400px;
+    h1 {
+        letter-spacing: .5px;  /* Adds 2px of space between each letter */
+      }
+    
+}
+
+.DocumentCard-img-container {
+    width: 100%;
+    max-height: 100%;
+    // width: 100%;
+    overflow: hidden;
+    border-radius: 12px 12px 0px 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.DocumentCard-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+.event-flyer {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    object-fit: contain;
+}
+
+.DocumentCard-content-container {
+    margin-top: 14px;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 8px;
+    h1{
+        margin: 0;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .description-container {
+        display: inline-flex;  /* Makes it take only the space required by its content */
+        padding: 1px 16px 1px 16px; // Top: 10px | Right: 15px | Bottom: 20px | Left: 25px
+        background-color: #ffa552;
+        color: #c75000;
+        border-radius: 20px;
+        
+        p {
+        padding: 0;
+        margin: 0;
+        font-size: small;
+        }
+      }
+    
+}
+
+.DocumentCard-content-container p {
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+.documentName {
+    font-weight:610;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+.DocumentCard-content-container span {
+    font-weight: 350;
+}
+
+.description-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}

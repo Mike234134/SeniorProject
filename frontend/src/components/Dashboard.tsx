@@ -9,23 +9,48 @@ interface DashboardProps {
 
 function Dashboard({ chatHistory }: DashboardProps) {
   return (
-    <div className="left-50 h-300 w-1/5 bg-[#FF9244] text-white flex flex-col rounded-4xl p-10">
-      <div className="flex mb-5">
-        <span className="flex"><MessageCircle /></span>
-        <span>Bear Assist</span>
-        <button className="ml-40"><PanelRight /></button>
+    <div className="left-50  w-64 bg-[#FF9244] text-white flex flex-col p-6">
+      <div>
+        <h1 className="font-bold text-lg">Bear Assist</h1>
       </div>
 
-      <button className="flex">
-        <span className="mb-4"><FileText /></span>
-        <span><a href="./Signup">Document</a></span>
-      </button>
-      <button className="flex">
-        <span className="gap-20"><MessageCircleMore /></span>
-        <span className="mb-8"><a href="#">Chats</a></span>
-      </button>
+      <div className="space-y-4 py-5">
+              <div className="flex items-center gap-2">
+                <div className="h-5 w-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                </div>
+                <span>Document</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-5 w-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <span>Chats</span>
+              </div>
+            </div>
 
-      <h2 className="flex font-medium mb-2 ml-2">Chat history</h2>
+      <h2 className="flex font-medium">Chat history</h2>
 
       <div className="rounded-lg">
         {chatHistory.map((chat, index) => (

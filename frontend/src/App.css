@@ -1,0 +1,16 @@
+html, body, #root{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+  
+.app{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.router-container{
+
+    width: 100%;
+}
