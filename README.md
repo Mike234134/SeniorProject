@@ -75,7 +75,7 @@ Our goal is to empower CS students with accessible and intelligent support, help
 - **FFmpeg** processes and plays audio directly in the browser for seamless audio feedback.
 ### Usage 
 -for the frontend 
--cd rontend 
+-cd frontend 
 -npm install to install all the node packages
 -npm run dev to run the development server on your local computer
 -for the backend 
