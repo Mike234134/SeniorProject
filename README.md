@@ -81,7 +81,6 @@ Our goal is to empower CS students with accessible and intelligent support, help
 - cd frontend 
 - npm install to install all the node packages
 - npm run dev to run the development server on your local computer
-for the backend 
 - cd backend
 - pip install -r requirements.txt
 - python app.py
