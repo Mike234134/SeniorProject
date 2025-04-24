@@ -43,7 +43,8 @@ const Admin = ({user, setUser}) => {
         const fetchStoredFiles = async () => {
           try {
             const response = await axios.get('http://127.0.0.1:5000/adminRetrieveDataSource'); // adjust endpoint as needed
-            setStoredFiles(response.data.files); // your backend should return a list of files
+            console.log(response.data)
+            setStoredFiles(response.data); // your backend should return a list of files
           } catch (err) {
             console.error('Failed to fetch existing files:', err);
           }
@@ -87,10 +88,13 @@ const Admin = ({user, setUser}) => {
                 'Content-Type': 'multipart/form-data',
                 },
             });
-
+            console.log(response.data)
             // Assuming response includes new file metadata, you can update stored files list
             if (response.data.uploadedFiles) {
-                setStoredFiles((prev) => [...prev, ...response.data.uploadedFiles]);
+              const newFiles = Array.isArray(response.data.uploadedFiles)
+                ? response.data.uploadedFiles
+                : [response.data.uploadedFiles];
+              setStoredFiles((prev) => [...prev, ...newFiles]);
             }
 
             console.log('Upload success:', response.data);
@@ -139,14 +143,14 @@ const Admin = ({user, setUser}) => {
                 </div>
                 <div className='uploaded-content-container'>
                     <h1>Uploaded files</h1>
-                    {storedFiles.map((file, i) => (
+                    {storedFiles && storedFiles.map((file, i) => (
                     <AdminCard
-                    key={i}
-                    title={file.name}
-                    size={file.size}
-                    uploadedOn= {new Date(file.lastModified).toLocaleString()}
+                      key={i}
+                      title={file.name}
+                      size={file.size}
+                      uploadedOn={file.uploadedOn}
                     />
-                ))}
+                  ))}
 
 
                 </div>

@@ -23,9 +23,9 @@ const Login = ({ user, setUser }) => {
       const isAdminRoute = location.pathname.includes('/admin');
   
       // Pre-set user_role based on route if not already set
-      if (isAdminRoute && user.user_role !== 'admin') {
-        setUser({ ...user, user_role: 'admin' });
-      }
+      // if (isAdminRoute && user.user_role !== 'admin') {
+      //   setUser({ ...user, user_role: 'admin' });
+      // }
   
       const response = await axios.post('http://127.0.0.1:5000/loginInfo', {
         email: user.Email,
@@ -38,7 +38,7 @@ const Login = ({ user, setUser }) => {
       const { user_role, status } = response.data;
   
       if (status === 'success') {
-        if (user_role === 'admin' && isAdminRoute) {
+        if (user_role === 'admin') {
           navigate('/admin');
         } else {
           navigate('/');

@@ -3,6 +3,7 @@ import { Send, FileUp, FileSearch, Volume2, VolumeX, Upload, ArrowUp, MicOff, Mi
 import { ElevenLabsClient, play } from 'elevenlabs'; // Import play function
 import GetData from '../../Api/GetData'
 import Dashboard from "../../components/Dashboard";
+import { Link } from "react-router";
 // Define types for our message objects
 interface ChatMessage {
   sender: "user" | "bot";
@@ -293,7 +294,10 @@ function App() {
                     <polyline points="14 2 14 8 20 8"></polyline>
                   </svg>
                 </div>
-                <span>Document</span>
+                <Link to={'/Document'}>
+                  <span>Document</span>
+                </Link>
+                
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-5 w-5">
@@ -309,7 +313,10 @@ function App() {
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                   </svg>
                 </div>
-                <span>Chats</span>
+                <Link to={'/'}>
+                  <span>Chats</span>
+                </Link>
+                
               </div>
             </div>
 

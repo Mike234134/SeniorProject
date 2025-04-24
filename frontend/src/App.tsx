@@ -28,7 +28,7 @@ function App() {
             
             <Route path="/" element={<Home />}/>
             <Route path='/Document' element={<Document/>} />
-            <Route path='/Admin' element={<Admin user={user} setUser={setUser} />} />
+            <Route path='/admin' element={<Admin user={user} setUser={setUser} />} />
             <Route path='/Login' element= {<Login user = {user} setUser={setUser} />} />
             <Route path='/admin/Login' element= {<Login user = {user} setUser={setUser} />} />
             <Route path= '/Signup' element= {<Signup user = {user} setUser = {setUser} />} />

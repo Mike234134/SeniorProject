@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 .env
+frontend/.env
+frontend/node_modules

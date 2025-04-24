@@ -2,6 +2,7 @@ import { MessageCircle } from 'lucide-react';
 import { FileText } from 'lucide-react';
 import { PanelRight } from 'lucide-react';
 import { MessageCircleMore } from 'lucide-react';
+import { Link } from 'react-router';
 
 interface DashboardProps {
   chatHistory: string[]; // Define the expected prop type for chat history
@@ -46,7 +47,9 @@ function Dashboard({ chatHistory }: DashboardProps) {
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                   </svg>
                 </div>
-                <span>Chats</span>
+                <Link to={'/'}>
+                  <span>Chats</span>
+                </Link>
               </div>
             </div>
 
