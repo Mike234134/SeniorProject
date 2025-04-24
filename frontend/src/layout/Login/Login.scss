@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.login {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .login-content-container {
+    border-radius: 16px;
+    background-color: #676972;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    max-height: 500px;
+    max-width: 600px;
+    padding: 50px;
+    align-items: center;
+
+    .login-header-container {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .login-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .login-username-container,
+      .login-password-container {
+        --padding: 14px;
+
+        p {
+          padding-left: var(--padding);
+          font-weight: normal;
+          font-size: 20px;
+        }
+
+        .hero-searchbar-container {
+          width: 484px;
+          display: flex;
+          align-items: center;
+          padding: var(--padding);
+          background-color: white;
+          border-radius: 28px;
+          margin-top: 10px;
+
+          .search-input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: black;
+          }
+        }
+      }
+
+      .login-button-container {
+        display: flex;
+        justify-content: center;
+
+        #login-button {
+          margin-top: 10px;
+          padding: 10px 20px;
+          font-weight: 750;
+          font-family: 'Lato', sans-serif;
+          background-color: #1c232c;
+          color: white;
+          border-radius: 24px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
