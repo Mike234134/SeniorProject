@@ -16,7 +16,6 @@ Bearassist is a smart assistant designed for **Morgan State University Computer 
 
 Bearassist helps students by allowing them to:
 - Upload **transcripts** to receive academic planning support.
-- Upload **resumes** for automatic analysis and career advice.
 - Ask department-specific questions and receive AI-generated responses.
 - Track and revisit previous interactions with the assistant.
 
